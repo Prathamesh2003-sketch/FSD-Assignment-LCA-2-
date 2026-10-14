@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,4 +90,136 @@ button:hover {
   text-align: center;
   margin-top: 15px;
   font-weight: bold;
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at 4% 20%, rgba(70, 60, 166, 0.12), transparent 34rem),
+    #090d19;
+  color: #edf0fb;
+  font-family: 'DM Sans', Inter, system-ui, sans-serif;
+}
+
+.standalone-topbar {
+  height: 58px;
+  flex: 0 0 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 max(7.2vw, calc((100vw - 1160px) / 2));
+  border-bottom: 1px solid rgba(151, 164, 195, 0.08);
+  background: rgba(8, 12, 23, 0.72);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #edf0fb;
+  font-family: Manrope, 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.35px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #8b79ff, #537df2);
+  box-shadow: 0 4px 14px rgba(107, 104, 255, 0.25);
+  color: #fff;
+  font-size: 12px;
+}
+
+.brand-accent {
+  color: #a99bff;
+}
+
+.back-link {
+  color: #9aa6bd;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #b6a8ff;
+}
+
+.form-container {
+  margin: auto;
+  border: 1px solid rgba(151, 164, 195, 0.13);
+  border-radius: 16px;
+  background: #11131f;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.34);
+}
+
+.form-container h2 {
+  color: #f1f2fa;
+}
+
+.form-control label {
+  color: #c9d0df;
+}
+
+.form-control input {
+  border-color: #2a2d3d;
+  border-radius: 9px;
+  outline: none;
+  background: #10111b;
+  color: #edf0fb;
+}
+
+.form-control input:focus {
+  border-color: #8878ed;
+  box-shadow: 0 0 0 3px rgba(136, 120, 237, 0.14);
+}
+
+.form-control input::placeholder {
+  color: #707a90;
+}
+
+.form-control.success input {
+  border-color: #3ca982;
+}
+
+.form-control.error input {
+  border-color: #ee667f;
+}
+
+.form-control small.error-msg {
+  color: #ff8296;
+}
+
+.form-container button {
+  border-radius: 9px;
+  background: linear-gradient(105deg, #a88cf4, #795cdb);
+  color: #100f1c;
+  font-weight: 700;
+}
+
+.form-container button:hover {
+  background: linear-gradient(105deg, #b39cf8, #866be4);
+}
+
+.success-msg {
+  color: #63d8ad;
+}
+
+@media (max-width: 500px) {
+  .standalone-topbar {
+    padding: 0 17px;
+  }
+
+  .form-container {
+    margin: auto 17px;
+  }
 }

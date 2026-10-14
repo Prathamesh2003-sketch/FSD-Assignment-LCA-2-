@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import CounterPage from './CounterPage.jsx';
 import './App.css';
 
 const projects = [
@@ -11,6 +12,7 @@ const projects = [
     category: 'HTML / CSS / JS',
     topic: 'Functions · Switch',
     art: 'calculator',
+    standalone: 'https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment-1-JS-Calculato/',
   },
   {
     id: 'todo',
@@ -21,6 +23,7 @@ const projects = [
     category: 'HTML / CSS / JS',
     topic: 'DOM · Events',
     art: 'todo',
+    standalone: 'https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment-2-Todo-List/',
   },
   {
     id: 'registration',
@@ -31,6 +34,7 @@ const projects = [
     category: 'HTML / CSS / JS',
     topic: 'Validation · Regex',
     art: 'registration',
+    standalone: 'https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment-3-Form-Validation/',
   },
   {
     id: 'profile',
@@ -41,6 +45,7 @@ const projects = [
     category: 'REACT',
     topic: 'useState · Props',
     art: 'profile',
+    standalone: 'https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment%204/',
   },
   {
     id: 'controlled',
@@ -51,6 +56,7 @@ const projects = [
     category: 'REACT',
     topic: 'useState · Forms',
     art: 'controlled',
+    standalone: 'https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment%205/',
   },
   {
     id: 'counter',
@@ -61,6 +67,7 @@ const projects = [
     category: 'REACT',
     topic: 'Components · Events',
     art: 'counter',
+    standalone: 'https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/counter.html',
   },
 ];
 
@@ -383,7 +390,10 @@ function DemoModal({ project, onClose }) {
       <section className="demo-modal" role="dialog" aria-modal="true" aria-labelledby="demo-title">
         <header className="modal-header">
           <div><span className="modal-eyebrow">PROJECT {project.number} / 06</span><h2 id="demo-title">{project.title}</h2><p>{project.detail}</p></div>
-          <button className="close-button" type="button" onClick={onClose} aria-label="Close demo">×</button>
+          <div className="modal-actions">
+            <a className="standalone-link" href={project.standalone} target="_blank" rel="noreferrer">Open standalone ↗</a>
+            <button className="close-button" type="button" onClick={onClose} aria-label="Close demo">×</button>
+          </div>
         </header>
         {demos[project.id]}
       </section>
@@ -391,7 +401,7 @@ function DemoModal({ project, onClose }) {
   );
 }
 
-function App() {
+function Portfolio() {
   const [filter, setFilter] = useState('All Work');
   const [search, setSearch] = useState('');
   const [activeProject, setActiveProject] = useState(null);
@@ -485,6 +495,10 @@ function App() {
       {activeProject && <DemoModal project={activeProject} onClose={() => setActiveProject(null)} />}
     </div>
   );
+}
+
+function App() {
+  return window.location.pathname.endsWith('/counter.html') ? <CounterPage /> : <Portfolio />;
 }
 
 export default App;

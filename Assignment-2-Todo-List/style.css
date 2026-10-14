@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
 /* ==============================
    RESET
 ============================== */
@@ -497,4 +499,184 @@ footer {
         padding: 12px 5px;
     }
 
+}
+
+body {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    background:
+        radial-gradient(ellipse at 4% 20%, rgba(70, 60, 166, 0.12), transparent 34rem),
+        #090d19;
+    color: #edf0fb;
+    font-family: 'DM Sans', Inter, system-ui, sans-serif;
+}
+
+.standalone-topbar {
+    height: 58px;
+    flex: 0 0 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(7.2vw, calc((100vw - 1160px) / 2));
+    border-bottom: 1px solid rgba(151, 164, 195, 0.08);
+    background: rgba(8, 12, 23, 0.72);
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #edf0fb;
+    font-family: Manrope, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.35px;
+    text-decoration: none;
+}
+
+.brand-mark {
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    background: linear-gradient(145deg, #8b79ff, #537df2);
+    box-shadow: 0 4px 14px rgba(107, 104, 255, 0.25);
+    color: #fff;
+    font-size: 12px;
+}
+
+.brand-accent {
+    color: #a99bff;
+}
+
+.back-link {
+    color: #9aa6bd;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #b6a8ff;
+}
+
+.app {
+    margin: 42px auto;
+    border-color: rgba(151, 164, 195, 0.13);
+    background: #11131f;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.34);
+}
+
+.title-icon {
+    background: linear-gradient(145deg, #8b79ff, #537df2);
+}
+
+.app-header h1,
+.list-heading h2,
+.task-text,
+.empty-state h3 {
+    color: #edf0fb;
+}
+
+.app-header p,
+.summary-box span,
+.empty-state p {
+    color: #8e9ab0;
+}
+
+.add-task input {
+    border-color: #2a2d3d;
+    background: #10111b;
+    color: #edf0fb;
+}
+
+.add-task input:focus {
+    border-color: #8878ed;
+    background: #10111b;
+    box-shadow: 0 0 0 3px rgba(136, 120, 237, 0.14);
+}
+
+.add-task button {
+    background: linear-gradient(105deg, #a88cf4, #795cdb);
+    color: #100f1c;
+}
+
+.summary-box {
+    border-color: rgba(151, 164, 195, 0.12);
+    background: #171a28;
+}
+
+.summary-box strong {
+    color: #b1a2ff;
+}
+
+.list-heading button {
+    color: #ad9aff;
+}
+
+.task-item {
+    border-color: rgba(151, 164, 195, 0.12);
+    background: #171a28;
+}
+
+.task-item:hover {
+    border-color: rgba(153, 139, 255, 0.35);
+    background: #1b1e2d;
+}
+
+.task-item.completed {
+    background: #141722;
+}
+
+.task-item.completed .task-text {
+    color: #7e899e;
+}
+
+.complete-btn {
+    background: rgba(75, 219, 162, 0.12);
+    color: #69d8ad;
+}
+
+.complete-btn:hover {
+    background: rgba(75, 219, 162, 0.2);
+}
+
+.delete-btn {
+    background: rgba(255, 110, 133, 0.12);
+    color: #ff8296;
+}
+
+.delete-btn:hover {
+    background: rgba(255, 110, 133, 0.2);
+}
+
+.empty-check {
+    background: rgba(75, 219, 162, 0.12);
+    color: #69d8ad;
+}
+
+.app footer {
+    border-color: rgba(151, 164, 195, 0.12);
+    color: #7e899e;
+}
+
+#taskList::-webkit-scrollbar-track {
+    background: #11131f;
+}
+
+#taskList::-webkit-scrollbar-thumb {
+    background: #34394b;
+}
+
+@media (max-width: 600px) {
+    .standalone-topbar {
+        padding: 0 17px;
+    }
+
+    .app {
+        margin: 25px auto;
+    }
 }

@@ -973,6 +973,25 @@
   line-height: 1;
 }
 
+.modal-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+}
+
+.standalone-link {
+  color: #b5a5ff;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.standalone-link:hover {
+  color: #d0c5ff;
+}
+
 .close-button:hover {
   background: #292b3b;
   color: #fff;
@@ -1746,6 +1765,14 @@
 
   .modal-header {
     padding: 21px 19px 14px;
+  }
+
+  .modal-actions {
+    gap: 6px;
+  }
+
+  .standalone-link {
+    font-size: 9px;
   }
 
   .modal-header h2 {

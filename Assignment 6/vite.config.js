@@ -5,4 +5,12 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   base: '/FSD-Assignment-LCA-2-/',
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        counter: 'counter.html',
+      },
+    },
+  },
 })

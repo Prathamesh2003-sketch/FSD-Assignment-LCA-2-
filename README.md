@@ -124,6 +124,18 @@ npm run preview    # preview the production build
 npm run lint       # run ESLint
 ```
 
+## Live portfolio and standalone demos
+
+The AssignmentHub portfolio links to independent pages for each program:
+
+- [AssignmentHub portfolio](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/)
+- [JavaScript Calculator](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment-1-JS-Calculato/)
+- [To-Do List](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment-2-Todo-List/)
+- [Form Validation](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment-3-Form-Validation/)
+- [React Profile Cards](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment%204/)
+- [Controlled React Form](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment%205/)
+- [React Counter](https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/counter.html)
+
 ---
 
 ## Project Structure

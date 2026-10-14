@@ -31,6 +31,24 @@ jobs:
       - name: Build website
         run: npm run build
         working-directory: Assignment 6
+      - name: Install profile-card dependencies
+        run: npm ci
+        working-directory: Assignment 4
+      - name: Build profile-card assignment
+        run: npm run build
+        working-directory: Assignment 4
+      - name: Install controlled-form dependencies
+        run: npm ci
+        working-directory: Assignment 5
+      - name: Build controlled-form assignment
+        run: npm run build
+        working-directory: Assignment 5
+      - name: Assemble independent assignment pages
+        run: |
+          mkdir -p "Assignment 6/dist/Assignment 4" "Assignment 6/dist/Assignment 5"
+          cp -R "Assignment 4/dist/." "Assignment 6/dist/Assignment 4/"
+          cp -R "Assignment 5/dist/." "Assignment 6/dist/Assignment 5/"
+          cp -R "Assignment-1-JS-Calculato" "Assignment-2-Todo-List" "Assignment-3-Form-Validation" "Assignment 6/dist/"
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

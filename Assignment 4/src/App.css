@@ -1,71 +1,172 @@
-.app-container {
+.standalone-topbar {
+  height: 58px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 0 max(7.2vw, calc((100vw - 1160px) / 2));
+  border-bottom: 1px solid rgba(151, 164, 195, 0.08);
+  background: rgba(8, 12, 23, 0.72);
 }
 
-.title {
-  color: #213547;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
-  text-align: center;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #edf0fb;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.35px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: linear-gradient(145deg, #8b79ff, #537df2);
+  box-shadow: 0 4px 14px rgba(107, 104, 255, 0.25);
+  color: #fff;
+  font-size: 12px;
+}
+
+.brand-accent {
+  color: #a99bff;
+}
+
+.back-link {
+  color: #9aa6bd;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: #b6a8ff;
+}
+
+.profile-page {
+  width: min(100% - 48px, 1096px);
+  min-height: calc(100vh - 58px);
+  margin: 0 auto;
+  padding: 72px 0 32px;
+}
+
+.page-heading {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #aa98ff;
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1.65px;
+}
+
+.page-heading h1 {
+  margin: 12px 0 5px;
+  color: #f0f2fb;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.page-heading h1 span {
+  color: #ad9aff;
+}
+
+.page-heading p {
+  margin: 0;
+  color: #929db2;
+  font-size: 13px;
 }
 
 .cards-wrapper {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .profile-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 24px;
-  width: 260px;
-  text-align: center;
-  transition: transform 0.2s ease;
+  padding: 26px;
+  border: 1px solid rgba(151, 164, 195, 0.12);
+  border-radius: 13px;
+  background: #111927;
+  text-align: left;
+  transition: transform 180ms ease, border-color 180ms ease;
 }
 
 .profile-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
+  border-color: rgba(153, 139, 255, 0.3);
 }
 
 .profile-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 16px;
-  border: 3px solid #646cff;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 17px;
+  border: 2px solid rgba(164, 145, 255, 0.48);
 }
 
 .profile-name {
-  font-size: 1.25rem;
-  color: #213547;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
+  color: #e9edf7;
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
 }
 
 .profile-desc {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 16px;
-  line-height: 1.4;
+  min-height: 48px;
+  margin-bottom: 19px;
+  color: #98a4b9;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 .profile-btn {
-  background-color: #646cff;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(105deg, #a88cf4, #795cdb);
+  color: #100f1c;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.2s;
+  font-size: 11px;
+  font-weight: 700;
+  transition: filter 150ms ease;
 }
 
 .profile-btn:hover {
-  background-color: #535bf2;
+  background: linear-gradient(105deg, #b39cf8, #866be4);
+}
+
+.profile-btn.connected {
+  border: 1px solid rgba(75, 219, 162, 0.2);
+  background: rgba(75, 219, 162, 0.11);
+  color: #6de0b4;
+}
+
+.standalone-footer {
+  margin-top: 40px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(151, 164, 195, 0.08);
+  color: #7f8ca4;
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .standalone-topbar {
+    padding: 0 17px;
+  }
+
+  .profile-page {
+    width: calc(100% - 34px);
+    padding-top: 44px;
+  }
+
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
 }

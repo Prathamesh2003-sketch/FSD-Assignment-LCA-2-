@@ -11,6 +11,8 @@ An interactive portfolio for six JavaScript and React assignments. Select a proj
 - **Controlled Form** — edit a contact form and see its live React-state preview.
 - **React Counter App** — increment, decrement, and reset a counter.
 
+Each card includes an **Open standalone** link to run that assignment as its own page. The counter is available at `counter.html`; the portfolio remains the default `index.html`.
+
 ## Run locally
 
 ```sh
@@ -22,6 +24,8 @@ Use the search field or category filters to find projects. Click **Explore Proje
 
 ## Deploy to GitHub Pages
 
-The `Deploy AssignmentHub to GitHub Pages` workflow builds this project and publishes it whenever changes are pushed to `main`. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**. After the first successful workflow run, the site will be available at:
+The `Deploy AssignmentHub to GitHub Pages` workflow builds this portfolio and the independent React assignments, then publishes all six standalone pages whenever changes are pushed to `main`. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**. After a successful workflow run, the portfolio will be available at:
 
 `https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/`
+
+Run Assignment 6's counter independently while developing with `npm run dev -- --open /counter.html`.
