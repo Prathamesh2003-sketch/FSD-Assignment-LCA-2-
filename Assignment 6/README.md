@@ -24,4 +24,4 @@ Use the search field or category filters to find projects. Click **Explore Proje
 
 The `Deploy AssignmentHub to GitHub Pages` workflow builds this project and publishes it whenever changes are pushed to `main`. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**. After the first successful workflow run, the site will be available at:
 
-`https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment%206/`
+`https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/`
