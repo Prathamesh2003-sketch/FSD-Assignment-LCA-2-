@@ -2,8 +2,8 @@
 
 :root {
   font-family: 'DM Sans', Inter, system-ui, sans-serif;
-  color: #edf0fb;
-  background: #090d19;
+  color: #20263a;
+  background: #f6f7fb;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,13 +11,13 @@
   font-optical-sizing: auto;
   font-weight: 400;
 
-  --page: #090d19;
-  --panel: #111827;
-  --muted: #8290a9;
-  --soft: #aab4c8;
-  --purple: #9b8afa;
-  --cyan: #65d7e8;
-  --line: rgba(151, 164, 195, 0.12);
+  --page: #f6f7fb;
+  --panel: #ffffff;
+  --muted: #737b8d;
+  --soft: #565f72;
+  --purple: #6554d9;
+  --cyan: #367d83;
+  --line: #e6e8ef;
 }
 
 * {
@@ -62,10 +62,10 @@ a {
 
 ::selection {
   color: #fff;
-  background: #6253bd;
+  background: #6554d9;
 }
 
 :focus-visible {
-  outline: 2px solid #a896ff;
+  outline: 2px solid #7666e8;
   outline-offset: 3px;
 }

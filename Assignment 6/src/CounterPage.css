@@ -172,3 +172,59 @@
     padding: 25px 20px;
   }
 }
+
+.counter-site {
+  background:
+    radial-gradient(ellipse at 4% 20%, rgba(101, 84, 217, 0.07), transparent 34rem),
+    #f6f7fb;
+}
+
+.counter-topbar {
+  border-color: #e9eaf0;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.counter-brand {
+  color: #20263a;
+}
+
+.counter-brand-mark {
+  background: #6554d9;
+}
+
+.counter-brand > span:last-child > span,
+.counter-eyebrow,
+.counter-card h1 span,
+.standalone-count {
+  color: #6554d9;
+}
+
+.counter-back,
+.counter-intro,
+.counter-caption {
+  color: #737b8d;
+}
+
+.counter-card {
+  border-color: #e4e6ed;
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(31, 38, 68, 0.09);
+}
+
+.counter-card h1 {
+  color: #20263a;
+}
+
+.counter-minus {
+  background: #6554d9;
+}
+
+.standalone-reset {
+  border-color: #e1e4ec;
+  background: #f2f3f8;
+  color: #414a5d;
+}
+
+.standalone-reset:hover {
+  background: #e9eaf2;
+}

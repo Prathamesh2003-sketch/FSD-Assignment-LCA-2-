@@ -680,3 +680,141 @@ body {
         margin: 25px auto;
     }
 }
+
+body {
+    background: #f6f7fb;
+    color: #20263a;
+}
+
+.standalone-topbar {
+    border-color: #e9eaf0;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.brand {
+    color: #20263a;
+}
+
+.brand-mark {
+    background: #6554d9;
+    box-shadow: 0 4px 10px rgba(101, 84, 217, 0.18);
+}
+
+.brand-accent {
+    color: #6554d9;
+}
+
+.back-link {
+    color: #737b8d;
+}
+
+.back-link:hover {
+    color: #5143b6;
+}
+
+.app {
+    border-color: #e4e6ed;
+    background: #fff;
+    box-shadow: 0 12px 36px rgba(31, 38, 68, 0.09);
+}
+
+.title-icon,
+.add-task button {
+    background: #6554d9;
+}
+
+.app-header h1,
+.list-heading h2,
+.task-text,
+.empty-state h3 {
+    color: #20263a;
+}
+
+.app-header p,
+.summary-box span,
+.empty-state p {
+    color: #737b8d;
+}
+
+.add-task input {
+    border-color: #dfe2ea;
+    background: #fff;
+    color: #252c3e;
+}
+
+.add-task input:focus {
+    border-color: #8171e3;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(101, 84, 217, 0.1);
+}
+
+.add-task button:hover {
+    background: #5545c1;
+}
+
+.summary-box {
+    border-color: #e5e7ee;
+    background: #f7f8fb;
+}
+
+.summary-box strong {
+    color: #6554d9;
+}
+
+.list-heading button {
+    color: #6554d9;
+}
+
+.task-item {
+    border-color: #e5e7ee;
+    background: #fff;
+}
+
+.task-item:hover {
+    border-color: #d1cbf4;
+    background: #faf9ff;
+}
+
+.task-item.completed {
+    background: #f7f8fb;
+}
+
+.task-item.completed .task-text {
+    color: #858c9b;
+}
+
+.complete-btn {
+    background: #e9f7f1;
+    color: #287c5c;
+}
+
+.complete-btn:hover {
+    background: #d7f0e5;
+}
+
+.delete-btn {
+    background: #fff0f1;
+    color: #bd4255;
+}
+
+.delete-btn:hover {
+    background: #ffe1e4;
+}
+
+.empty-check {
+    background: #eeecfb;
+    color: #6554d9;
+}
+
+.app footer {
+    border-color: #eceef3;
+    color: #858c9b;
+}
+
+#taskList::-webkit-scrollbar-track {
+    background: #f4f5f8;
+}
+
+#taskList::-webkit-scrollbar-thumb {
+    background: #d1d5df;
+}

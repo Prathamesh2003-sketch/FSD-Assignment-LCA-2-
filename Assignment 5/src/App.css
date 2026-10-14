@@ -244,3 +244,104 @@
     grid-template-columns: 1fr;
   }
 }
+
+.standalone-topbar {
+  border-color: #e9eaf0;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.brand {
+  color: #20263a;
+}
+
+.brand-mark {
+  background: #6554d9;
+  box-shadow: 0 4px 10px rgba(101, 84, 217, 0.18);
+}
+
+.brand-accent,
+.eyebrow,
+.page-heading h1 span {
+  color: #6554d9;
+}
+
+.back-link,
+.page-heading p,
+.field-count {
+  color: #737b8d;
+}
+
+.page-heading h1 {
+  color: #20263a;
+}
+
+.controlled-form,
+.live-preview {
+  border-color: #e4e6ed;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(31, 38, 68, 0.035);
+}
+
+.form-field label {
+  color: #414a5d;
+}
+
+.form-field input,
+.form-field textarea {
+  border-color: #dfe2ea;
+  background: #fff;
+  color: #252c3e;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #9198a7;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-color: #8171e3;
+}
+
+.submit-button {
+  background: #6554d9;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background: #5545c1;
+  filter: none;
+}
+
+.save-message {
+  color: #248365;
+}
+
+.live-preview {
+  border-color: #d9e8e5;
+  background: linear-gradient(155deg, #f1f8f6, #f7f9fc);
+}
+
+.preview-heading,
+.live-dot {
+  color: #287d65;
+}
+
+.live-preview h2 {
+  color: #252c3e;
+}
+
+.live-preview > p {
+  color: #727b8e;
+}
+
+.live-preview blockquote {
+  border-color: #76b8a4;
+  background: #fff;
+  color: #555f71;
+}
+
+.standalone-footer {
+  border-color: #e9eaf0;
+  color: #737b8d;
+}

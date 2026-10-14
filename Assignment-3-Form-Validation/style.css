@@ -223,3 +223,88 @@ body {
     margin: auto 17px;
   }
 }
+
+body {
+  background: #f6f7fb;
+  color: #20263a;
+}
+
+.standalone-topbar {
+  border-color: #e9eaf0;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.brand {
+  color: #20263a;
+}
+
+.brand-mark {
+  background: #6554d9;
+  box-shadow: 0 4px 10px rgba(101, 84, 217, 0.18);
+}
+
+.brand-accent {
+  color: #6554d9;
+}
+
+.back-link {
+  color: #737b8d;
+}
+
+.back-link:hover {
+  color: #5143b6;
+}
+
+.form-container {
+  border-color: #e4e6ed;
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(31, 38, 68, 0.09);
+}
+
+.form-container h2 {
+  color: #20263a;
+}
+
+.form-control label {
+  color: #414a5d;
+}
+
+.form-control input {
+  border-color: #dfe2ea;
+  background: #fff;
+  color: #252c3e;
+}
+
+.form-control input:focus {
+  border-color: #8171e3;
+  box-shadow: 0 0 0 3px rgba(101, 84, 217, 0.1);
+}
+
+.form-control input::placeholder {
+  color: #9198a7;
+}
+
+.form-control.success input {
+  border-color: #3ca982;
+}
+
+.form-control.error input {
+  border-color: #db5369;
+}
+
+.form-control small.error-msg {
+  color: #bd4255;
+}
+
+.form-container button {
+  background: #6554d9;
+  color: #fff;
+}
+
+.form-container button:hover {
+  background: #5545c1;
+}
+
+.success-msg {
+  color: #248365;
+}

@@ -170,3 +170,72 @@
     grid-template-columns: 1fr;
   }
 }
+
+.standalone-topbar {
+  border-color: #e9eaf0;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.brand {
+  color: #20263a;
+}
+
+.brand-mark {
+  background: #6554d9;
+  box-shadow: 0 4px 10px rgba(101, 84, 217, 0.18);
+}
+
+.brand-accent,
+.eyebrow,
+.page-heading h1 span {
+  color: #6554d9;
+}
+
+.back-link,
+.page-heading p,
+.profile-desc,
+.standalone-footer {
+  color: #737b8d;
+}
+
+.profile-page {
+  background: transparent;
+}
+
+.page-heading h1,
+.profile-name {
+  color: #20263a;
+}
+
+.profile-card {
+  border-color: #e4e6ed;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(31, 38, 68, 0.035);
+}
+
+.profile-card:hover {
+  border-color: #d1cbf4;
+}
+
+.profile-img {
+  border-color: #ddd8f8;
+}
+
+.profile-btn {
+  background: #6554d9;
+  color: #fff;
+}
+
+.profile-btn:hover {
+  background: #5545c1;
+}
+
+.profile-btn.connected {
+  border-color: #cce9dc;
+  background: #ecf8f2;
+  color: #287c5c;
+}
+
+.standalone-footer {
+  border-color: #e9eaf0;
+}
