@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Daily Tasks</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- App Heading -->
+        <header class="app-header">
+
+            <div class="title-icon">✓</div>
+
+            <div>
+                <h1>Daily Tasks</h1>
+                <p>Plan your work and stay productive.</p>
+            </div>
+
+        </header>
+
+
+        <!-- Add Task -->
+        <section class="add-task">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+                onkeydown="handleEnter(event)"
+            >
+
+            <button
+                type="button"
+                onclick="addTask()">
+
+                Add
+
+            </button>
+
+        </section>
+
+
+        <!-- Task Summary -->
+        <section class="summary">
+
+            <div class="summary-box">
+                <strong id="totalTasks">0</strong>
+                <span>Total Tasks</span>
+            </div>
+
+            <div class="summary-box">
+                <strong id="completedTasks">0</strong>
+                <span>Completed</span>
+            </div>
+
+            <div class="summary-box">
+                <strong id="pendingTasks">0</strong>
+                <span>Pending</span>
+            </div>
+
+        </section>
+
+
+        <!-- Task Heading -->
+        <section class="list-heading">
+
+            <h2>My Task List</h2>
+
+            <button
+                type="button"
+                onclick="clearCompleted()">
+
+                Remove Completed
+
+            </button>
+
+        </section>
+
+
+        <!-- Tasks -->
+        <ul id="taskList"></ul>
+
+
+        <!-- Empty State -->
+        <section
+            id="emptyMessage"
+            class="empty-state">
+
+            <div class="empty-check">✓</div>
+
+            <h3>Your task list is empty</h3>
+
+            <p>
+                Add your first task to get started.
+            </p>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <p>Simple To-Do List • HTML • CSS • JavaScript</p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuickCalc - Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator-container">
+
+        <header class="calculator-header">
+            <h1>QuickCalc</h1>
+            <p>JavaScript Calculator</p>
+        </header>
+
+        <!-- Result Display -->
+        <section class="screen">
+            <div id="expression">Enter values and choose an operation</div>
+            <div id="result">0</div>
+        </section>
+
+        <!-- Input Section -->
+        <section class="number-section">
+
+            <div class="field">
+                <label for="num1">Number 1</label>
+                <input
+                    type="number"
+                    id="num1"
+                    placeholder="Enter first number"
+                >
+            </div>
+
+            <div class="field">
+                <label for="num2">Number 2</label>
+                <input
+                    type="number"
+                    id="num2"
+                    placeholder="Enter second number"
+                >
+            </div>
+
+        </section>
+
+        <!-- Operations -->
+        <section class="operation-section">
+
+            <h3>Choose Operation</h3>
+
+            <div class="operation-buttons">
+
+                <button class="operator active" data-op="+">
+                    <strong>+</strong>
+                    <span>Addition</span>
+                </button>
+
+                <button class="operator" data-op="-">
+                    <strong>-</strong>
+                    <span>Subtraction</span>
+                </button>
+
+                <button class="operator" data-op="*">
+                    <strong>×</strong>
+                    <span>Multiplication</span>
+                </button>
+
+                <button class="operator" data-op="/">
+                    <strong>÷</strong>
+                    <span>Division</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Calculate -->
+        <button class="calculate-btn" onclick="calculate()">
+            Calculate Result
+        </button>
+
+        <!-- History -->
+        <section class="history-section">
+
+            <div class="history-title">
+                <h3>History</h3>
+
+                <button onclick="clearHistory()">
+                    Clear All
+                </button>
+            </div>
+
+            <div id="history">
+                <p class="no-history">
+                    Your calculations will appear here.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Created using HTML, CSS & JavaScript</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
