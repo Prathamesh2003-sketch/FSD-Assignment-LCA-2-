@@ -1,16 +1,27 @@
-# React + Vite
+# AssignmentHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive portfolio for six JavaScript and React assignments. Select a project card to open its working demo without leaving the page.
 
-Currently, two official plugins are available:
+## Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **JavaScript Calculator** — four arithmetic operations and recent calculation history.
+- **Interactive To-Do List** — add, complete, remove, and track tasks.
+- **User Registration Form** — validate name, email, phone number, and password.
+- **User Profile Card** — explore reusable profile cards and toggle connections.
+- **Controlled Form** — edit a contact form and see its live React-state preview.
+- **React Counter App** — increment, decrement, and reset a counter.
 
-## React Compiler
+## Run locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```sh
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Use the search field or category filters to find projects. Click **Explore Project** on any card to try its demo. Press `Ctrl+K` (or `Cmd+K` on macOS) to focus search; press `Escape` or click outside a demo to close it.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Deploy to GitHub Pages
+
+The `Deploy AssignmentHub to GitHub Pages` workflow builds this project and publishes it whenever changes are pushed to `main`. In the repository, open **Settings → Pages** and set the build and deployment source to **GitHub Actions**. After the first successful workflow run, the site will be available at:
+
+`https://prathamesh2003-sketch.github.io/FSD-Assignment-LCA-2-/Assignment%206/`
